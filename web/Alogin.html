@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Login Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Global styles */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Form container styles */
+            .container {
+                margin: 50px auto;
+                max-width: 500px;
+                padding: 40px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px #ccc;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 28px;
+                color: #333;
+            }
+
+            /* Form styles */
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: #333;
+            }
+
+            input[type="text"], input[type="password"] {
+                padding: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: none;
+                box-shadow: 0px 0px 5px #ccc;
+                font-size: 16px;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-size: 18px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #148f77;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To Event Portal</h1>
+        </header>
+        <div class="container">
+            <h2>Admin Login Page</h2>
+            <form method="post" action="ValidateAd">
+                <!--<label for="username">Username:</label>-->
+                <input type="text" id="username" name="Ausername" placeholder="Username">
+                <!--<label for="password">Password:</label>-->
+                <input type="password" id="password" name="Apassword" placeholder="Password">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <div class="container1">
+                <p>&copy; 2023 Event Portal</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

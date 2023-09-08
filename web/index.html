@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container {
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .card {
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                padding: 20px;
+                margin: 20px;
+                max-width: 300px;
+                text-align: center;
+            }
+            .card img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+            .card h2 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            .card p {
+                margin: 5;
+                font-size: 16px;
+                line-height: 1.5;
+
+            }
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .button:hover {
+                background-color: #3e8e41;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To Event Portal</h1>
+            <!--<p>Please choose the below links to login to your account.</p>-->
+        </header>
+        <div class="container">
+            <div class="card">
+                <img src="user-gear.png" alt="Admin Image">
+                <h2>Admin Login</h2>
+                <p>Login as an admin to manage events.</p>
+                <a href="Alogin.html" class="button">Admin Login</a>
+            </div>
+            <div class="card">
+                <img src="group.png" alt="Participant Image">
+                <h2>Participant Login</h2>
+                <p>Login as a participant to view and register for events.</p>
+                <a href="Parlogin.html" class="button">Participant Login</a>
+            </div>
+        </div>
+        <footer>
+            <div class="container1">
+                <p>&copy; 2023 Event Portal</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>
