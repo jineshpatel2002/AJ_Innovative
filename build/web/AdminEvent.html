@@ -1,0 +1,90 @@
+<!-- ADMIN Page- -->
+<!DOCTYPE html>
+<html><br>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin's Page for Event Management</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <style>
+            main {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap:nowrap;
+                padding: 2rem;
+            }
+
+            section {
+                background-color: white;
+                border: 2px solid #333;
+                border-radius: 0.5rem;
+                padding: 2rem;
+                margin: 2rem;
+                width: 40%;
+            }
+
+            h2 {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                border: 2px solid #333;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            main a {
+                display: block;
+                text-align: center;
+                margin-top: 1rem;
+                background-color: #4CAF50;
+                color: white;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #1abc9a;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Welcome To Event Portal</h1>
+            <nav>
+                <a href="LogoutServlet">Logout</a>
+            </nav>
+        </header>
+        <main>
+            <section id="event-details">
+                <img src="https://www.evenesis.com/wp-content/uploads/2015/10/event-pic.jpg" alt="Events" width="200" height="100">
+                <h2>Event Details</h2>
+                <a href="EventDetails.html">View Details</a>
+            </section>
+            <section id="transaction-details">
+                <img src="https://image.shutterstock.com/image-vector/financial-transactions-cashless-operation-on-260nw-1008168730.jpg" alt="Transactions" width="200" height="100">
+                <h2>Transaction Details</h2>
+                <a href="TraH">View Details</a>
+            </section>
+        </main>
+        <footer>
+            <div class="container1">
+                <p>&copy; 2023 Event Portal</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Event</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <style>
+            #common {
+                color: #333;
+                margin-top: 50px;
+            }
+
+            .form-container {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 30px;
+                text-align: center;
+            }
+
+            label {
+                display: inline-block;
+                width: 250px; /* adjust the width as per your need */
+                text-align: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            input[type="text"], input[type="email"], input[type="password"], select {
+                display: inline-block;
+                width: 400px; /* adjust the width as per your need */
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+            }
+
+
+            input[type="text"]::placeholder {
+                color: #aaa;
+            }
+
+            input[type="submit"] {
+                display: flex;
+                background-color: #4CAF50;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+                font-size: 18px;
+                margin-top: 20px;
+                margin-left: 350px; 
+                padding: 12px 20px;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #1abc9a;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To Event Portal</h1>
+            <nav>
+                <a href="LogoutServlet">Logout</a>
+            </nav>
+        </header>
+        <h2 id="common">Add Events</h2>
+        <div class="form-container">
+            <form method="post" action="AddEvent">
+                <label for="EventNo">Event Number</label>
+                <input type="text" name="EventNo" id="EventNo" placeholder="Enter Event Number">
+
+                <label for="EventName">Event Name</label>
+                <input type="text" name="EventName" id="EventName" placeholder="Enter Event Name">
+
+                <label for="coordinatorName">Coordinator Name</label>
+                <input type="text" name="coordinatorName" id="coordinatorName" placeholder="Enter Coordinator Name">
+
+                <label for="CoordinatorNo">Coordinator Number</label>
+                <input type="text" name="CoordinatorNo" id="CoordinatorNo" placeholder="Enter Coordinator Number">
+
+                <label for="fee">Fee for Registration</label>
+                <input type="text" name="fee" id="fee" placeholder="Enter Registration Fee">
+
+                <label for="venue">Venue of Event</label>
+                <input type="text" name="venue" id="venue" placeholder="Enter Event Venue">
+
+                <label for="date">Date of Event</label>
+                <input type="text" name="date" id="date" placeholder="Enter Event Date">
+                
+                <label for="maxcapacity">Max Capacity</label>
+                <input type="text" name="maxCapacity" id="maxcapacity" placeholder="Enter Max Capacity">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <div class="container1">
+                <p>&copy; 2023 Event Portal</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

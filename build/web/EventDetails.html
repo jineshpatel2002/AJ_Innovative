@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Event Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                margin-top: 50px;
+            }
+            section {
+                background-color: white;
+                border: 2px solid #333;
+                border-radius: 0.5rem;
+                padding: 2rem;
+                margin: 2rem;
+                width: 40%;
+            }
+            main a {
+                display: block;
+                text-align: center;
+                margin-top: 1rem;
+                background-color: #4CAF50;
+                color: white;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+            }
+            .container h2 {
+                color: black;
+                margin-right: 50px;
+            }
+            #button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 12px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To Event Portal</h1>
+            <nav>
+                <a href="LogoutServlet">Logout</a>
+            </nav>
+        </header>
+        <h1 style="text-align:center; margin-top:20px;">Event Management</h1>
+        <div class="container">
+            <section>
+                <h2>1. Create Event Link</h2>
+                <a href="CreateE.html"><button type="button" id="button">Create Event</button></a>
+            </section>
+            <section>
+                <h2>2. View Event Link</h2>
+                <a href="ViewEvent1"><button type="button" id="button">View Event</button></a>
+            </section>
+        </div>
+        <footer>
+            <div class="container1">
+                <p>&copy; 2023 Event Portal</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
